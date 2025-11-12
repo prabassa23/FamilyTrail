@@ -187,3 +187,19 @@ p { max-width: 700px; margin: 0 auto 30px; line-height: 1.6; }
   .meta { flex-direction: column; gap: 8px; }
   .countdown { flex-wrap: wrap; justify-content: center; }
 }
+.brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
