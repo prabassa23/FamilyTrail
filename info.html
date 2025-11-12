@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Trail - Informació</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="img/logo.png" alt="Family Trail Logo" class="logo">
+      <span>Family Trail</span>
+    </div>
+    <nav>
+      <a href="index.html" class="nav-link">Inici</a>
+      <a href="info.html" class="nav-link active">Info</a>
+      <a href="#programa" class="nav-link">Programa</a>
+      <a href="#galeria" class="nav-link">Galeria</a>
+      <a href="#preparant" class="nav-link">Preparant</a>
+      <a href="#colab" class="nav-link">Col·laboradors</a>
+      <a href="#contacte" class="nav-link">Contacte</a>
+    </nav>
+    <button class="btn-nav">Inscriu-t’hi</button>
+  </header>
+
+  <section id="info" class="info-section">
+    <div class="container">
+      <div class="info-content">
+        <div class="info-text">
+          <h2>Informació del Family Trail</h2>
+          <p class="subtitle">Tot el que necessites saber sobre l'esdeveniment</p>
+
+          <h3>Sobre el Family Trail</h3>
+          <p>
+            El Family Trail és molt més que una cursa, és una celebració de la vida en família i el nostre amor per la natura.
+            Un recorregut dissenyat per gaudir junts, descobrir racons màgics del nostre poble i crear vincles que duraran per sempre.
+          </p>
+          <p>
+            Amb diferents distàncies adaptades a totes les edats i nivells, el nostre objectiu és que cada família trobi el seu ritme
+            i gaudeixi de cada pas del camí. Sense competició, només diversió, natura i bons moments.
+          </p>
+          <p>
+            Aquest esdeveniment promou els valors de la vida saludable, el respecte pel medi ambient i la importància dels moments en família.
+            És una oportunitat perfecta per desconnectar de la rutina i connectar amb els teus éssers estimats.
+          </p>
+        </div>
+
+        <div class="info-map">
+          <iframe
+            src="https://www.komoot.com/tour/2039631120/embed?share_token=aKPCLjaOSbw2N1ps1lbCQf384tdsDLlOhz3cVU3NZvaBTVM4o3&utm_source=embed&utm_medium=embed&utm_campaign=tour_embed"
+            width="100%"
+            height="500"
+            style="border:none; border-radius: 16px;"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓ DESCOBREIX (les 3 cards) -->
+  <section class="descobreix">
+    <h2 class="section-title">Descobreix el Family Trail</h2>
+    <p class="section-subtitle">Un esdeveniment per a tothom</p>
+
+    <div class="cards">
+      <div class="card visible">
+        <div class="icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Per a tothom</h3>
+        <p>
+          Activitat adaptada a tots els nivells i edats. Tant si ets un corredor experimentat com si prefereixes caminar tranquil·lament.
+        </p>
+      </div>
+
+      <div class="card visible">
+        <div class="icon"><i class="fa-solid fa-tree"></i></div>
+        <h3>Entorn natural</h3>
+        <p>
+          Gaudeix dels paisatges més bonics de Sant Julià de Lòria, amb camins segurs i ben senyalitzats.
+        </p>
+      </div>
+
+      <div class="card visible">
+        <div class="icon"><i class="fa-solid fa-people-roof"></i></div>
+        <h3>Ambient familiar</h3>
+        <p>
+          Un esdeveniment pensat per gaudir en família, amb activitats complementàries i un ambient acollidor.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Family Trail" class="footer-logo" />
+        <div class="footer-title">Family Trail</div>
+      </div>
+
+      <p class="footer-tagline">Connectant famílies amb la natura</p>
+
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-btn" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M12 8.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Z" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+          </svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:hello@familytrail.cat" aria-label="Email" class="social-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+            <path d="M3 6.5h18v11H3z" stroke="currentColor" stroke-width="1.6" />
+            <path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2025 Family Trail. Tots els drets reservats.</p>
+    </div>
+  </footer>
+
+  <!-- Font Awesome (per als icones de les cards) -->
+  <script src="https://kit.fontawesome.com/8f0a4c2a32.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
