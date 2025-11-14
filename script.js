@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // --- Contador de cuenta atrás ---
-  const eventDate = new Date(2026, 2, 23, 9, 0, 0).getTime();
+  const eventDate = new Date(2026, 2, 19, 4, 0, 0).getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
