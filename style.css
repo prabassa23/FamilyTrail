@@ -423,6 +423,195 @@ a:hover {
 .banner--leaving {
   animation: bannerBounceLeave 600ms cubic-bezier(.22,.61,.36,1) forwards;
 }
+/* Bloc final d'informació */
+.info-extra-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.info-extra-card {
+  background: #eafff2;
+  border: 2px solid #b8f0cd;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.info-extra-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0f8f4a;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-ig, .btn-mail {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #0f8f4a;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-ig:hover, .btn-mail:hover {
+  background: #0c733d;
+}
+/* -------------------------------
+   PÀGINA PROGRAMA (CENTRAT)
+--------------------------------*/
+
+.programa-section {
+  padding: 80px 0;
+  width: 100%;
+}
+
+.programa-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.programa-section .subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* 🟢 GRID CENTRADA COM A LA FOTO */
+.programa-grid {
+  display: grid;
+  grid-template-columns: 600px 600px; /* EXACTE com la imatge */
+  gap: 40px; /* separació entre els dos blocs */
+  justify-content: center;  /* 🔥 centra TOT al mig */
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;  /* centres real */
+}
+
+/* ----------------------------
+   BOXES
+-----------------------------*/
+
+.programa-box {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* TITLES */
+.programa-title {
+  padding: 20px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.programa-title.green {
+  background: linear-gradient(90deg, #0ea66b, #2ad38b);
+}
+
+.programa-title.orange {
+  background: linear-gradient(90deg, #ff8c00, #ff6a00);
+}
+
+/* HORARI ITEMS */
+.horari-item {
+  display: flex;
+  align-items: center;
+  background: #eafdf2;
+  margin: 18px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  gap: 18px;
+}
+
+.horari-item i {
+  background: #0ea66b;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  min-width: 42px;
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horari-item h3 {
+  font-size: 20px;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.horari-item p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* PREMIS ITEMS */
+.premi-item {
+  background: #fff8e6;
+  margin: 15px 18px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.premi-item .num {
+  background: #ff9800;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* INCLÒS */
+.inclou {
+  border: 2px solid #33cc8b;
+  background: #e8fff4;
+  padding: 25px;
+  margin: 25px 18px;
+  border-radius: 14px;
+}
+
+.inclou h3 {
+  margin-bottom: 14px;
+  color: #117a55;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inclou ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.inclou li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
 
 
 
