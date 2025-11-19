@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Trail - Galeria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <img src="img/logo.png" alt="Family Trail Logo" class="logo">
+      <span>Family Trail</span>
+    </div>
+
+    <nav>
+      <a href="index.html" class="nav-link">Inici</a>
+      <a href="info.html" class="nav-link">Info</a>
+      <a href="programa.html" class="nav-link">Programa</a>
+      <a href="galeria.html" class="nav-link active">Galeria</a>
+      <a href="preparant.html" class="nav-link">Preparant</a>
+      <a href="colab.html" class="nav-link">Col·laboradors</a>
+      <a href="contacte.html" class="nav-link">Contacte</a>
+    </nav>
+
+    <button class="btn-nav">Inscriu-t’hi</button>
+  </header>
+
+  <!-- GALERIA -->
+  <section class="gallery-section">
+      <h2 class="gallery-title">Galeria d'Edicions Anteriors</h2>
+      <p class="gallery-subtitle">Reviu els millors moments del Family Trail</p>
+
+      <!-- Filtros -->
+      <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Totes</button>
+          <button class="filter-btn" data-filter="trail">Trail</button>
+          <button class="filter-btn" data-filter="natura">Paisatges</button>
+          <button class="filter-btn" data-filter="persones">Participants</button>
+      </div>
+
+      <!-- Imágenes -->
+      <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+               class="gallery-item" data-category="trail">
+
+          <img src="https://images.unsplash.com/photo-1526481280695-3c720685208b"
+               class="gallery-item" data-category="trail">
+
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+               class="gallery-item" data-category="natura">
+
+          <img src="https://images.unsplash.com/photo-1520975918319-6c2c1a2fd28c"
+               class="gallery-item" data-category="persones">
+
+          <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15"
+               class="gallery-item" data-category="persones">
+
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+               class="gallery-item" data-category="natura">
+      </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+      <img id="lightbox-img">
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Family Trail" class="footer-logo" />
+        <div class="footer-title">Family Trail</div>
+      </div>
+
+      <p class="footer-tagline">Connectant famílies amb la natura</p>
+
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/fedacyglesias/" target="_blank" aria-label="Instagram" class="social-btn" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M12 8.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Z" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:jmarquez@fedac.cat" aria-label="Email" class="social-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+            <path d="M3 6.5h18v11H3z" stroke="currentColor" stroke-width="1.6" />
+            <path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2025 Family Trail. Tots els drets reservats.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- JS DENTRO DEL ARCHIVO -->
+  <script>
+    /* FILTRES */
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.dataset.filter;
+
+            document.querySelectorAll(".gallery-item").forEach(item => {
+                item.style.display =
+                  (filter === "all" || item.dataset.category === filter)
+                  ? "block"
+                  : "none";
+            });
+        });
+    });
+
+    /* LIGHTBOX */
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    document.querySelectorAll(".gallery-item").forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.style.display = "flex";
+        });
+    });
+
+    lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
